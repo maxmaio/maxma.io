@@ -1,3 +1,3 @@
 ## Iamma.io
 
-Built with reat
+Built with react
