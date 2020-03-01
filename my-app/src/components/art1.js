@@ -1,18 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './art1.css'
-import { Container, Col} from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 
 class art1 extends React.Component {
     componentDidMount() {
       this.drawArt();
     }
-  
-
-    
+ 
 drawArt(){
-        "use strict";
-{
+    let graph;
     class Noise {
         // http://mrl.nyu.edu/~perlin/noise/
         constructor(octaves = 1) {
@@ -94,6 +91,7 @@ drawArt(){
     const canvas = {
         init() {
             this.elem = document.createElement("canvas");
+            graph = this.elem;
             document.body.appendChild(this.elem);
             this.resize();
             return this.elem.getContext("2d");
@@ -107,23 +105,42 @@ drawArt(){
             ctx.fillStyle = "#012";
         }
     };
+    function oMousePosScaleCSS(canvas, evt) {
+        let ClientRect = canvas.getBoundingClientRect(), 
+            scaleX = canvas.width / ClientRect.width,
+            scaleY = canvas.height / ClientRect.height; 
+            return {
+            x: (evt.clientX - ClientRect.left) * scaleX, 
+            y: (evt.clientY - ClientRect.top) * scaleY 
+        }
+      }
     // init pointer
     const pointer = {
         init(canvas) {
             this.x = canvas.width * 0.5;
             this.y = canvas.height * 0.5;
+            var rect = graph.getBoundingClientRect();
+            console.log(rect);
             ["mousedown", "touchstart"].forEach((event, touch) => {
                 document.addEventListener(
                     event,
                     e => {
-                        if (touch) {
+
+                       let m= oMousePosScaleCSS(graph,e);
+                       this.x = m.x;
+                       this.y = m.y;
+
+                      /*  if (touch) {
                             e.preventDefault();
-                            this.x = e.targetTouches[0].clientX;
-                            this.y = e.targetTouches[0].clientY;
+                    
+                            this.x = e.clientX - rect.left;
+                            this.y = e.clientY - rect.top;
                         } else {
-                            this.x = e.clientX -200;
-                            this.y = e.clientY;
-                        }
+                            console.log(e);
+                            this.x = e.clientX - rect.left/2;
+                            this.y = e.clientY - rect.top/2;
+                        }*/
+                        
                         init();
                     },
                     false
@@ -155,7 +172,7 @@ drawArt(){
     init();
     run();
 }
-    }
+    
     render() {
       return(
         <Container className="art111">
