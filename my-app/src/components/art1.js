@@ -159,8 +159,10 @@ drawArt(){
     render() {
       return(
         <Container className="art111">
-            <p>click to restart flow</p>
+            <p>click on canvas below to restart flow</p>
            <div id="art11" ref={el => this.el = el} />
+           <p>to go back to homepage click <a href="/">here</a> </p>
+
            </Container>
         );
     }

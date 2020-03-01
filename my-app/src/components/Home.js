@@ -8,18 +8,16 @@ const Home = () => {
         <Container>
         <Container className="header">
           <Image className="gravatar" src="https://www.gravatar.com/avatar/4934318e81ec19904134280eb795b7ad?s=600" alt="avatar" />
-          <h4>Max Maio</h4>
+          <h5>max maio</h5>
+          <p>math art and coding... and maybe some other things</p>
         </Container>
           <Container fluid={true}>
       <Nav className="justify-content-center">
         <Nav.Item>
-          <Nav.Link href="/art1">Active</Nav.Link>
+          <Nav.Link href="/art1">art1</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">Link</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="link-2">Link</Nav.Link>
+          <Nav.Link eventKey="disabled" disabled>coming soon</Nav.Link>
         </Nav.Item>
       </Nav>
           </Container>
