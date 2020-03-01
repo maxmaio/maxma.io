@@ -11,7 +11,6 @@ class art1 extends React.Component {
 drawArt(){
     let graph;
     class Noise {
-        // http://mrl.nyu.edu/~perlin/noise/
         constructor(octaves = 1) {
             this.p = new Uint8Array(512);
             this.octaves = octaves;
@@ -102,7 +101,7 @@ drawArt(){
         },
         reset() {
             this.resize();
-            ctx.fillStyle = "#012";
+            ctx.fillStyle = "#2774ff";
         }
     };
     function oMousePosScaleCSS(canvas, evt) {
