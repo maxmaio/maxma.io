@@ -1,0 +1,13 @@
+.gravatar {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 8px;
+  
+  }
+  
+  .header {
+    text-align: center;
+    padding: 36px 12px;
+  }

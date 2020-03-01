@@ -1,18 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import Error from './components/Error';
+import art1 from './components/art1';
+import Navigation from './components/Navagation';
 
-class App extends React.Component {
-
-render(){
-  return (
-    <div className="header">
-      <img className="gravatar" src="https://www.gravatar.com/avatar/4934318e81ec19904134280eb795b7ad?s=600" alt="avatar" />
-      <h4>Max Maio</h4>
-  </div>
-  );
+class App extends Component {
+  render() {
+    return (      
+       <BrowserRouter>
+        <div>
+          <Navigation />
+            <Switch>
+             <Route path="/" component={Home} exact/>
+             <Route path="/art1" component={art1} exact/>
+             <Route component={Error}/>
+           </Switch>
+        </div> 
+      </BrowserRouter>
+    );
+  }
 }
-}
-
+ 
 export default App;
+
