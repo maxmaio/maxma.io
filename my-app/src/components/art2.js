@@ -1,9 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './art1.css'
+import './art2.css'
 import { Container} from 'react-bootstrap';
 
-class art1 extends React.Component {
+class art2 extends React.Component {
     componentDidMount() {
       this.drawArt();
     }
@@ -72,9 +72,9 @@ drawArt(){
         }
         move() {
             const n = perlin.noise(this.x * 0.01, this.y * 0.01);
-            const a = this.a + n * 16;
-            this.x += Math.cos(a);
-            this.y += Math.sin(a);
+            const a = this.a + n * 10;
+            this.x += Math.cos(a) * a * 0.5;
+            this.y += Math.sin(a) * a * 0.5;
             ctx.fillRect(this.x, this.y, 0.75, 0.75);
             if (
                 this.x < 0 ||
@@ -184,7 +184,7 @@ drawArt(){
     
     render() {
       return(
-        <Container className="art111">
+        <Container className="artpiece">
             <p>click on canvas below to restart flow</p>
            <div ref={el => this.el = el} />
            <p>to go back to homepage click <a href="/">here</a> </p>
@@ -193,4 +193,4 @@ drawArt(){
         );
     }
   }
-export default art1;
+export default art2;
