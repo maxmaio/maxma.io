@@ -1,1 +1,1 @@
-## cd my-app to get started
+## 'cd my-app' to get started
