@@ -1,3 +1,3 @@
-## Iamma.io
+## maxma.io
 
-Built with react
+personal website for random things
