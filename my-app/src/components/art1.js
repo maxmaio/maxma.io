@@ -101,7 +101,7 @@ drawArt(){
         },
         reset() {
             this.resize();
-            ctx.fillStyle = "#2774ff";
+            ctx.fillStyle = "#000000";
         }
     };
     function oMousePosScaleCSS(canvas, evt) {
