@@ -89,7 +89,9 @@ drawArt(){
     // init canvas
     const canvas = {
         init() {
+            const id = "canvas1";
             this.elem = document.createElement("canvas");
+            this.elem.id= id;
             graph = this.elem;
             document.body.appendChild(this.elem);
             this.resize();
@@ -184,12 +186,14 @@ drawArt(){
     
     render() {
       return(
+    <Container>
         <Container className="art111">
             <p>click on canvas below to restart flow</p>
-           <div ref={el => this.el = el} />
            <p>to go back to homepage click <a href="/">here</a> </p>
+        </Container>
 
-           </Container>
+    </Container>
+                      
         );
     }
   }

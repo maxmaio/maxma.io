@@ -89,8 +89,10 @@ drawArt(){
     // init canvas
     const canvas = {
         init() {
+            const id = "canvas1"
             this.elem = document.createElement("canvas");
             graph = this.elem;
+            this.elem.id= id;
             document.body.appendChild(this.elem);
             this.resize();
             return this.elem.getContext("2d");
