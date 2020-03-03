@@ -8,12 +8,12 @@ body, html {
 }
 
 
-canvas {
-    padding: 0;
+#canvas1 {
+    padding: 36px;
     margin-left: auto;
     margin-bottom: auto;
     margin-right: auto;
-    margin-top: 110px;
+    margin-top: auto;
     display: block;
     width: 600px;
     height: 300px;
