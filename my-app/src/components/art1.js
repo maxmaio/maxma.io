@@ -98,8 +98,8 @@ drawArt(){
             return this.elem.getContext("2d");
         },
         resize() {
-            this.width = this.elem.width = "800";
-            this.height = this.elem.height = "500";
+            this.width = this.elem.width = "1100";
+            this.height = this.elem.height = "825";
         },
         reset() {
             this.resize();
@@ -127,16 +127,28 @@ drawArt(){
                     event,
                     e => {
                         console.log(e);
-                                if(e.clientY> rect.top){
-                                        if(e.clientY < rect.bottom){
-                                        let m= oMousePosScaleCSS(graph,e);
-                            
+                        let m;
+                        if(e.clientY> rect.top){
+                                if(e.clientY < rect.bottom){
+                                    if(document.body.clientWidth<600){
+                                        m= oMousePosScaleCSS(graph,e);
                                         this.x = m.x;
                                         this.y = m.y;
                                         init();
                                     }
-                                
-                            
+                                    else if(e.clientX<rect.right){
+                                        if(e.clientX > rect.left){
+                                            m= oMousePosScaleCSS(graph,e); 
+                                            this.x = m.x;
+                                            this.y = m.y;
+                                            init();                                                   
+                                        }
+                                    }
+                    
+
+                            }
+                        
+                    
 
                         }
 
@@ -160,9 +172,37 @@ drawArt(){
         }
     };
     // init pen
+    let canvasSize = document.body.clientWidth;
+    let newWidth;
+    let newHeight;
+    if (canvasSize > 600){
+        let tmp = 600;
+        newWidth = tmp;
+        newHeight = newWidth/1.75;
+    }
+    else{
+        newWidth = canvasSize;
+        newHeight = newWidth/1.75;
+    }
+    let stringWidth = newWidth.toString();
+    let stringHeight = newHeight.toString();
+    let px = "px";
+    stringWidth = stringWidth + px;
+    stringHeight = stringHeight+ px;
     const ctx = canvas.init();
+    document.getElementById('canvas1').style.width =stringWidth;
+    document.getElementById('canvas1').style.height =stringHeight;
+    document.getElementById('canvas1').style.paddingLeft ="36px";
+    document.getElementById('canvas1').style.paddingRight ="36px";
+    if(canvasSize < 500){
+
+        document.getElementById('canvas1').style.marginTop ="50%";
+    }
+    else{
+        document.getElementById('canvas1').style.marginTop ="114px";
+    }
     pointer.init(canvas);
-    const perlin = new Noise(3);
+    const perlin = new Noise(8);
     const particles = new Set();
     // start new
     const init = () => {

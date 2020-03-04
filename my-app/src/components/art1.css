@@ -12,7 +12,6 @@ body, html {
     margin-left: auto;
     margin-bottom: auto;
     margin-right: auto;
-    margin-top: 150px;
     display: block;
     width: 600px;
     height: 300px;
@@ -25,4 +24,8 @@ body, html {
 .art111{
     text-align: center;
     padding: 36px;
+
 }
+p{
+    margin-bottom: 0rem;
+};
