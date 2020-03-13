@@ -107,9 +107,13 @@ drawArt(){
         }
     };
     function oMousePosScaleCSS(canvas, evt) {
-        let ClientRect = canvas.getBoundingClientRect(), 
-            scaleX = canvas.width / ClientRect.width,
-            scaleY = canvas.height / ClientRect.height; 
+        let ClientRect = canvas.getBoundingClientRect();
+
+
+        let scaleX = canvas.width / ClientRect.width;
+        console.log("scaleX: "+scaleX);
+        let scaleY = canvas.height / ClientRect.height; 
+        console.log("scaleY: "+scaleY);
             return {
             x: (evt.clientX - ClientRect.left) * scaleX, 
             y: (evt.clientY - ClientRect.top) * scaleY 
@@ -126,7 +130,7 @@ drawArt(){
                 document.addEventListener(
                     event,
                     e => {
-                        console.log(e);
+               //         console.log(e);
                         let m;
                         if(e.clientY> rect.top){
                                 if(e.clientY < rect.bottom){
@@ -139,6 +143,7 @@ drawArt(){
                                     else if(e.clientX<rect.right){
                                         if(e.clientX > rect.left){
                                             m= oMousePosScaleCSS(graph,e); 
+                                            console.log(m);
                                             this.x = m.x;
                                             this.y = m.y;
                                             init();                                                   
@@ -172,6 +177,7 @@ drawArt(){
         }
     };
     // init pen
+    
     let canvasSize = document.body.clientWidth;
     let newWidth;
     let newHeight;
@@ -201,6 +207,8 @@ drawArt(){
     else{
         document.getElementById('canvas1').style.marginTop ="114px";
     }
+    
+
     pointer.init(canvas);
     const perlin = new Noise(8);
     const particles = new Set();
