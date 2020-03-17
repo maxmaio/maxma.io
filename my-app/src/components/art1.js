@@ -114,6 +114,8 @@ drawArt(){
         console.log("scaleX: "+scaleX);
         let scaleY = canvas.height / ClientRect.height; 
         console.log("scaleY: "+scaleY);
+        console.log("clientrect.left "+ ClientRect.left);
+        console.log("evt.clientX "+ evt.clientX);
             return {
             x: (evt.clientX - ClientRect.left) * scaleX, 
             y: (evt.clientY - ClientRect.top) * scaleY 
