@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './art1.css'
-import { Container} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 class art1 extends React.Component {
     componentDidMount() {
@@ -158,8 +158,6 @@ drawArt(){
                     
 
                         }
-
-
                       /*  if (touch) {
                             e.preventDefault();
                     
@@ -170,8 +168,6 @@ drawArt(){
                             this.x = e.clientX - rect.left/2;
                             this.y = e.clientY - rect.top/2;
                         }*/
-                        
-                    
                     },
                     false
                 );
@@ -241,9 +237,7 @@ drawArt(){
             <p>click on canvas below to restart flow</p>
            <p>to go back to homepage click <a href="/">here</a> </p>
         </Container>
-
-    </Container>
-                      
+    </Container>             
         );
     }
   }

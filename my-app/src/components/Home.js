@@ -20,6 +20,9 @@ const Home = () => {
           <Nav.Link href="/art2">art2</Nav.Link>
         </Nav.Item>
         <Nav.Item>
+          <Nav.Link href="/art3">art3</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Nav.Link eventKey="disabled" disabled>coming soon</Nav.Link>
         </Nav.Item>
       </Nav>
