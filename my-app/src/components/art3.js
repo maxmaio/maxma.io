@@ -382,7 +382,7 @@ render() {
     return(
   <Container>
       <Container className="art333">
-          <p>click on canvas below to restart flow</p>
+          <p>aesthetic visualization</p>
          <p>to go back to homepage click <a href="/">here</a> </p>
       </Container>
   </Container>             
