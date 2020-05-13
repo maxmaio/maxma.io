@@ -382,7 +382,7 @@ render() {
     return(
   <Container>
       <Container className="art333">
-          <p>aesthetic visualization</p>
+          <p>drag mouse around the screen to interact with vizualization</p>
          <p>to go back to homepage click <a href="/">here</a> </p>
       </Container>
   </Container>             

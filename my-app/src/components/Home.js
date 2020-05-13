@@ -9,18 +9,18 @@ const Home = () => {
         <Container className="header">
           <Image className="gravatar" src="https://www.gravatar.com/avatar/4934318e81ec19904134280eb795b7ad?s=600" alt="avatar" />
           <h5>max maio</h5>
-          <p>math art and coding... and maybe some other things</p>
+          <p>math art and coding...</p>
         </Container>
           <Container fluid={true}>
       <Nav className="justify-content-center">
         <Nav.Item>
-          <Nav.Link href="/art1">art1</Nav.Link>
+          <Nav.Link href="/art1">ex1</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/art2">art2</Nav.Link>
+          <Nav.Link href="/art2">ex2</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/art3">art3</Nav.Link>
+          <Nav.Link href="/art3">ex3</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="disabled" disabled>coming soon</Nav.Link>
