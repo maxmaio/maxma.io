@@ -6,7 +6,7 @@ import './Home.css';
 const Home = () => {
     return (
         <Container>
-        <Container className="header">
+        <Container className="headerHome">
           <Image className="gravatar" src="https://www.gravatar.com/avatar/4934318e81ec19904134280eb795b7ad?s=600" alt="avatar" />
           <h5>max maio</h5>
           <p>math art and coding...</p>

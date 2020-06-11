@@ -1,6 +1,5 @@
-.header {
+.headerBday {
     padding-top: 10%;
-    padding-bottom: 10%;
 }
 
 .dk {
@@ -16,7 +15,6 @@
   }
   .css-typing2 p:nth-child(1) {
     width: 17em;
-    text-align: center;
     -webkit-animation: type 2s steps(200, end);
     animation: type 2s steps(200, end);
     -webkit-animation-fill-mode: forwards;
@@ -87,7 +85,7 @@
     animation-fill-mode: forwards;
   }
   .css-typing2 p:nth-child(8) {
-    width: 17em;
+    width: 12em;
     opacity: 0;
     -webkit-animation: type2 3s steps(200, end);
     animation: type2 3s steps(200, end);
@@ -101,8 +99,8 @@
     opacity: 0;
     -webkit-animation: type2 0s steps(200, end);
     animation: type2 0s steps(200, end);
-    -webkit-animation-delay: 22s;
-    animation-delay: 22s;
+    -webkit-animation-delay: 22.5s;
+    animation-delay: 22.5s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }

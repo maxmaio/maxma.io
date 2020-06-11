@@ -6,7 +6,7 @@ import {Container, Image} from 'react-bootstrap';
 const maxBday = () => {
     return (
         <Container>
-        <Container className="header">
+        <Container className="headerBday">
 
         </Container>
         <Container className="css-typing2">
