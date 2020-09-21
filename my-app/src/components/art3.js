@@ -39,7 +39,7 @@ drawArt(){
                 this.height = "600";
             }
             pointer.mag = Math.min(this.width, this.height) *0.5;
-            console.log(pointer.mag);
+
 		}
 	};
 	const pointer = {

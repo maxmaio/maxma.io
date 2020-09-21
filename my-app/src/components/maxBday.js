@@ -11,7 +11,7 @@ const maxBday = () => {
         </Container>
         <Container className="css-typing2">
         <p>
-            <h1>you're invited😈</h1>
+            <h1>you're invited </h1>
         </p>
         <p>
             <b>What:</b> Max's Birthday
@@ -32,7 +32,7 @@ const maxBday = () => {
             are gonna be grilling us cardiff crack!
         </p>
         <p>
-            Late night it's DK time 😈 
+            Late night it's DK time
         </p>
         <p>
             <Container className="dk">

@@ -111,11 +111,7 @@ drawArt(){
 
 
         let scaleX = canvas.width / ClientRect.width;
-        console.log("scaleX: "+scaleX);
         let scaleY = canvas.height / ClientRect.height; 
-        console.log("scaleY: "+scaleY);
-        console.log("clientrect.left "+ ClientRect.left);
-        console.log("evt.clientX "+ evt.clientX);
             return {
             x: (evt.clientX - ClientRect.left) * scaleX, 
             y: (evt.clientY - ClientRect.top) * scaleY 
@@ -127,12 +123,10 @@ drawArt(){
             this.x = canvas.width * 0.5;
             this.y = canvas.height * 0.5;
             var rect = graph.getBoundingClientRect();
-            console.log(rect);
             ["mousedown", "touchstart"].forEach((event, touch) => {
                 document.addEventListener(
                     event,
                     e => {
-               //         console.log(e);
                         let m;
                         if(e.clientY> rect.top){
                                 if(e.clientY < rect.bottom){
@@ -145,7 +139,7 @@ drawArt(){
                                     else if(e.clientX<rect.right){
                                         if(e.clientX > rect.left){
                                             m= oMousePosScaleCSS(graph,e); 
-                                            console.log(m);
+
                                             this.x = m.x;
                                             this.y = m.y;
                                             init();                                                   
@@ -158,16 +152,6 @@ drawArt(){
                     
 
                         }
-                      /*  if (touch) {
-                            e.preventDefault();
-                    
-                            this.x = e.clientX - rect.left;
-                            this.y = e.clientY - rect.top;
-                        } else {
-                            console.log(e);
-                            this.x = e.clientX - rect.left/2;
-                            this.y = e.clientY - rect.top/2;
-                        }*/
                     },
                     false
                 );
