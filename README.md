@@ -2,4 +2,4 @@
 ----------------
 This is my personal website that I built with React.
 
-[maxma.io](maxma.io)
+[maxma.io](https://maxma.io/)
