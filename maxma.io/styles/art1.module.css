@@ -1,0 +1,24 @@
+
+
+.canvas1 {
+
+    margin: auto auto;
+    display: block;
+
+}
+.text {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.text p{
+ 
+        margin-bottom: 0rem;
+
+}
