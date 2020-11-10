@@ -10,19 +10,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-          <Image 
+        <div className={styles.bio}>
+          <img 
             src="https://www.gravatar.com/avatar/4934318e81ec19904134280eb795b7ad?s=600"
             alt="avatar" 
             width= {100}
             height= {100}
-            display= "inline-block"
-            border-radius="100%"
             />
           <h5>Max Maio</h5>
-          <p>Software Engineer interested in math art and coding</p>
+          <p>Software Engineer</p>
           <p>Resume available <a href="https://drive.google.com/file/d/1EXnTgOMuRYa5Xa8UpjPSSWmgXxhwjYzU/view?usp=sharing" target="_blank">here</a></p>
-
+        </div>
+        
+        <main className={styles.main}>
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
