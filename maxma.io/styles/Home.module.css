@@ -5,7 +5,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d9dce5;
+  background-color: #f6f9fc;
+
+}
+
+.wrapper {
+  background-image: url(/grid.svg);
+  background-repeat: repeat;
+
 }
 .bio {
   padding: 2rem 0;
