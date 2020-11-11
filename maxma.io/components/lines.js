@@ -28,7 +28,7 @@ function Lines({ count, colors }) {
         return {
           color: colors[parseInt(colors.length * Math.random())],
           width: Math.max(0.01, 0.1 * Math.random()),
-          speed: Math.max(0.0001, 0.0005 * Math.random()),
+          speed: Math.max(0.000075, 0.0001 * Math.random()),
           curve
         }
       }),
@@ -52,7 +52,7 @@ function App() {
   return (
     <div className={styles.top}>
     <Canvas 
-      camera={{ position: [0, 0, 10], fov: 25 }}
+      camera={{ position: [0, 0, 10], fov: 70 }}
       onMouseMove={e => (mouse.current = [e.clientX - window.innerWidth / 2, e.clientY - window.innerHeight / 2])}>
       <Lines count={20} colors={['#7a73ff', '#80e9ff', '#e0feff', '#fec959', '#9487ff']} />
       <Rig mouse={mouse} />

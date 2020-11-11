@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Nav} from 'reactstrap';
 import dynamic from 'next/dynamic'
 
 const DynamicComponent = dynamic(() => import('../components/lines'))
