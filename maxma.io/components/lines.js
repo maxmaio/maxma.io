@@ -27,7 +27,7 @@ function Lines({ count, colors }) {
         const curve = new THREE.CatmullRomCurve3(points).getPoints(1000)
         return {
           color: colors[parseInt(colors.length * Math.random())],
-          width: Math.max(0.1, 0.5 * Math.random()),
+          width: Math.max(0.01, 0.1 * Math.random()),
           speed: Math.max(0.0001, 0.0005 * Math.random()),
           curve
         }
@@ -54,7 +54,7 @@ function App() {
     <Canvas 
       camera={{ position: [0, 0, 10], fov: 25 }}
       onMouseMove={e => (mouse.current = [e.clientX - window.innerWidth / 2, e.clientY - window.innerHeight / 2])}>
-      <Lines count={40} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
+      <Lines count={20} colors={['#7a73ff', '#80e9ff', '#e0feff', '#fec959', '#9487ff']} />
       <Rig mouse={mouse} />
     </Canvas>
     </div>

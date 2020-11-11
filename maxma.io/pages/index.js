@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import dynamic from 'next/dynamic'
+
+const DynamicComponent = dynamic(() => import('../components/lines'))
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+      
+      <main className={styles.main}>
 
       <div className={styles.bio}>
         <img 
@@ -23,11 +29,6 @@ export default function Home() {
         <p>Resume available <a href="https://drive.google.com/file/d/1EXnTgOMuRYa5Xa8UpjPSSWmgXxhwjYzU/view?usp=sharing" target="_blank">here</a></p>
       </div>
 
-      <main className={styles.main}>
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
@@ -58,6 +59,7 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <DynamicComponent />
       </main>
 
       <footer className={styles.footer}>

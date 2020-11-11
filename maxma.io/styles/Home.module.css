@@ -45,6 +45,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
 }
 
 
@@ -105,6 +108,7 @@
 }
 
 .grid {
+  visibility: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,7 +119,7 @@
 
 .card {
   margin: 1rem;
-  flex-basis: 45%;
+  flex-basis: 25%;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
