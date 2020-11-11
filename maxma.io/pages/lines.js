@@ -3,7 +3,7 @@ import React, { useMemo, useRef } from 'react'
 import * as THREE from 'three'
 import * as meshline from 'threejs-meshline'
 import { extend, Canvas, useFrame, useThree } from 'react-three-fiber'
-
+import styles from "../styles/lines.module.css"
 
 extend(meshline)
 
@@ -50,12 +50,14 @@ function Rig({ mouse }) {
 function App() {
   const mouse = useRef([0, 0])
   return (
+    <div className={styles.top}>
     <Canvas 
       camera={{ position: [0, 0, 10], fov: 25 }}
       onMouseMove={e => (mouse.current = [e.clientX - window.innerWidth / 2, e.clientY - window.innerHeight / 2])}>
       <Lines count={40} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
       <Rig mouse={mouse} />
     </Canvas>
+    </div>
   
   )
 }
