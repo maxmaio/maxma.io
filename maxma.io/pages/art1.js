@@ -183,7 +183,7 @@ drawArt(){
     document.getElementById('canvas1').style.height =stringHeight;
     document.getElementById('canvas1').style.paddingLeft ="36px";
     document.getElementById('canvas1').style.paddingRight ="36px";
-
+    document.body.style = "background-color: #f6f9fc;";
     
 
     pointer.init(canvas);
@@ -211,11 +211,13 @@ drawArt(){
     
     render() {
       return(
+        <Container className={styles.container}>
         <Container className={styles.text}>
             <h5>click on canvas below to interact with drawing</h5>
             <p>the algorithm does not allow any of the lines to collide</p>
            <p>to go back to homepage click <a href="/">here</a> </p>
         </Container>  
+        </Container>
         );
     }
   }
