@@ -12,14 +12,13 @@
 
 }
 .center {  
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
-
-
 }
 
 .bio {
@@ -50,6 +49,7 @@
 
 .nav {
   font-size: 15px;
+  flex-wrap: nowrap;
 }
 ul.nav a{
   color: #635bff;

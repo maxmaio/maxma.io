@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from'../styles/art1.module.css'
-import {Container} from 'reactstrap';
+import {Container,Nav, NavItem, NavLink } from 'reactstrap';
 
 class art1 extends React.Component {
     componentDidMount() {
@@ -215,7 +215,17 @@ drawArt(){
         <Container className={styles.text}>
             <h5>click on canvas below to interact with drawing</h5>
             <p>the algorithm does not allow any of the lines to collide</p>
-           <p>to go back to homepage click <a href="/">here</a> </p>
+            <Nav className={styles.nav}>
+                        <NavItem>
+                            <NavLink href="/">Home</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/projects">Projects</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="https://drive.google.com/file/d/1EXnTgOMuRYa5Xa8UpjPSSWmgXxhwjYzU/view?usp=sharing" target="_blank">Resume</NavLink>
+                        </NavItem>
+                    </Nav>
         </Container>  
         </Container>
         );

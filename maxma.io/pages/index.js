@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '../styles/Home.module.css'
 import {Nav, Navbar, NavItem, NavLink} from 'reactstrap';
 import dynamic from 'next/dynamic'
 
@@ -34,7 +34,7 @@ export default function Home() {
       <div >
         <Nav className={styles.nav}>
           <NavItem>
-            <NavLink href="/">Home</NavLink>
+            <NavLink href="/" active= {true}>Home</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/projects">Projects</NavLink>
