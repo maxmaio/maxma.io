@@ -3,7 +3,7 @@
   height: 100%;
   background-color: #f6f9fc;
   position: absolute;
-
+  line-height: 1;
 }
 
 .wrapper {
@@ -41,11 +41,26 @@
 
 .bio p {
   font-size: 15px;
-  color: #4b6379;
+  color: #425466;
   margin-bottom: 0;
 }
 .bio h5{
-  margin-bottom: 0;
+  margin-bottom: 4px;
+}
+
+.nav {
+  font-size: 15px;
+}
+ul.nav a{
+  color: #635bff;
+  font-weight: 600;
+
+}
+ul.nav a:hover{
+  color: #0a2540;
+  transition: var(--hoverTransition);
+  transition-property: color,opacity
+
 }
 .main {
  width: 100%;

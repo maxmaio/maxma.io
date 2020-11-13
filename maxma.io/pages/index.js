@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Nav, Navbar, NavItem, NavLink} from 'reactstrap';
 import dynamic from 'next/dynamic'
 
+
 const DynamicComponent = dynamic(() => import('../components/lines'))
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
 
       <div className={styles.center}>
       <div className={styles.bio}>
-        <img 
+        <Image 
           src="https://www.gravatar.com/avatar/4934318e81ec19904134280eb795b7ad?s=600"
           alt="avatar" 
           width= {100}
@@ -30,10 +31,13 @@ export default function Home() {
         <h5>Max Maio</h5>
         <p>Software Engineer in CA</p>
       </div>
-      <div>
-        <Nav>
+      <div >
+        <Nav className={styles.nav}>
           <NavItem>
-            <NavLink href="/art1">Projects</NavLink>
+            <NavLink href="/">Home</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/projects">Projects</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="https://drive.google.com/file/d/1EXnTgOMuRYa5Xa8UpjPSSWmgXxhwjYzU/view?usp=sharing" target="_blank">Resume</NavLink>
