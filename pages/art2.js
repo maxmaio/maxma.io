@@ -216,7 +216,7 @@ drawArt(){
       return(
         <Container className={styles.container}>
         <Container className={styles.text}>
-            <h5>click on canvas below to interact with drawing</h5>
+            <h4>click on canvas below to interact with drawing</h4>
             <p>the algorithm does not allow any of the lines to collide</p>
             <Nav className={styles.nav}>
                         <NavItem>

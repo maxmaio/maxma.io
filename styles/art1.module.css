@@ -1,40 +1,35 @@
-
-
 .canvas1 {
-
-    margin: auto auto;
-    display: block;
-
+  margin: auto auto;
+  display: block;
 }
+
 .text {
-    padding: 2.5rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+  padding: 2.5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.text p{
- 
-        margin-bottom: 0rem;
-
+.text p {
+  font-size: 18.75px;
+  margin-bottom: 0rem;
 }
 
 .nav {
-    font-size: 15px;
-    flex-wrap: nowrap;
-  }
-  
-  ul.nav a {
-    color: #635bff;
-    font-weight: 600;
-  }
-  
-  ul.nav a:hover {
-    color: #0a2540;
-    transition: var(--hoverTransition);
-    transition-property: color, opacity
-  }
+  font-size: 18.75px;
+  flex-wrap: nowrap;
+}
+
+ul.nav a {
+  color: #635bff;
+  font-weight: 600;
+}
+
+ul.nav a:hover {
+  color: #0a2540;
+  transition: var(--hoverTransition);
+  transition-property: color, opacity
+}
