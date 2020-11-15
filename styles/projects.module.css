@@ -21,24 +21,24 @@
 
 .bio img {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   border-radius: 100%;
   margin-bottom: 4px;
 }
 
 .bio p {
-  font-size: 15px;
+  font-size: 18.75px;
   color: #425466;
   margin-bottom: 0;
 }
 
 .bio h5 {
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .nav {
-  font-size: 15px;
+  font-size: 18.75px;
   flex-wrap: nowrap;
 }
 
@@ -54,9 +54,14 @@ ul.nav a:hover {
 }
 
 .main {
-  padding: 18px 18px;
+  padding: 36px 18px 72px;
   margin: 0 auto;
-  max-width: 38em;
+  max-width: 45em;
+}
+.main p{
+  font-size: 19px;
+  margin-bottom: 18px;
+  line-height: 1.5em;
 }
 .main a{
   color:#26b482;
