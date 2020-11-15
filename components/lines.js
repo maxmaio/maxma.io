@@ -27,7 +27,7 @@ function Lines({ count, colors }) {
         const curve = new THREE.CatmullRomCurve3(points).getPoints(1000)
         return {
           color: colors[parseInt(colors.length * Math.random())],
-          width: Math.max(0.01, 0.1 * Math.random()),
+          width: Math.max(0.0125, 0.125 * Math.random()),
           speed: Math.max(0.000075, 0.0001 * Math.random()),
           curve
         }
