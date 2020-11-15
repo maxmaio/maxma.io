@@ -6,9 +6,10 @@
   line-height: 1;
 }
 .center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
   padding-top: 45px;
-  margin: auto;
-  width: 50%;
   
 }
 .bio {
@@ -31,6 +32,7 @@
   font-size: 18.75px;
   color: #425466;
   margin-bottom: 0;
+  flex-wrap: nowrap;
 }
 
 .bio h4 {
