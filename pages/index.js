@@ -21,7 +21,7 @@ export default function Home() {
           width= {100}
           height= {100}
           />
-        <h5>Max Maio</h5>
+        <h4>Max Maio</h4>
         <p>Software Engineer in CA</p>
       </div>
       <div >
