@@ -1,8 +1,11 @@
 .container {
-  width: 100%;
   background-color: #f6f9fc;
-  position: absolute;
   line-height: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 .center {
   margin-left: auto;
