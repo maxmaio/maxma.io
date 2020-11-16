@@ -52,6 +52,7 @@ function App() {
   return (
     <div className={styles.top}>
     <Canvas 
+      gl={{ antialias: true }}
       camera={{ position: [0, 0, 10], fov: 70 }}
       onMouseMove={e => (mouse.current = [e.clientX - window.innerWidth / 2, e.clientY - window.innerHeight / 2])}>
       <Lines count={20} colors={['#7a73ff', '#80e9ff', '#e0feff', '#fec959', '#9487ff']} />
