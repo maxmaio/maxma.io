@@ -1,7 +1,10 @@
 .container {
   background-color: #f6f9fc;
   line-height: 1;
-  width: 100%;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 .center {
   margin-left: auto;
@@ -11,7 +14,6 @@
   
 }
 .bio {
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
