@@ -17,7 +17,9 @@ export default function projects() {
                     <h4>Max Maio</h4>
                     <p>Software Engineer in CA</p>
 
-                    <div >
+
+                </div>
+                <div >
                         <Nav className={styles.nav}>
                             <NavItem>
                                 <NavLink href="/">Home</NavLink>
@@ -30,7 +32,6 @@ export default function projects() {
                             </NavItem>
                         </Nav>
                     </div>
-                </div>
 
             </div>
             <div className={styles.main}>
