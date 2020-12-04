@@ -13,7 +13,7 @@ function Fatline({ curve, width, color, speed }) {
   return (
     <mesh>
       <meshLine attach="geometry" vertices={curve} />
-      <meshLineMaterial attach="material" ref={material} transparent depthTest={false} lineWidth={width} color={color} dashArray={0.1} dashRatio={0.9} />
+      <meshLineMaterial attach="material" ref={material} transparent depthTest={false} lineWidth={width} color={color} dashArray={0.1} dashRatio={0.5} />
     </mesh>
   )
 }
@@ -27,7 +27,7 @@ function Lines({ count, colors }) {
         const curve = new THREE.CatmullRomCurve3(points).getPoints(1000)
         return {
           color: colors[parseInt(colors.length * Math.random())],
-          width: Math.max(0.03, 0.125 * Math.random()),
+          width: Math.max(0.03, 0.1 * Math.random()),
           speed: Math.max(0.00005, 0.0001 * Math.random()),
           curve
         }
@@ -55,7 +55,7 @@ function App() {
       gl={{ antialias: true }}
       camera={{ position: [0, 0, 10], fov: 25 }}
       onMouseMove={e => (mouse.current = [e.clientX - window.innerWidth / 2, e.clientY - window.innerHeight / 2])}>
-      <Lines count={50} colors={['#7a73ff', '#80e9ff', '#e0feff', '#fec959', '#9487ff']} />
+      <Lines count={20} colors={['#7a73ff', '#80e9ff', '#e0feff', '#fec959', '#9487ff']} />
       <Rig mouse={mouse} />
     </Canvas>
     </div>
