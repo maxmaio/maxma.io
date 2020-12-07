@@ -13,7 +13,7 @@ function Fatline({ curve, width, color, speed }) {
   return (
     <mesh>
       <meshLine attach="geometry" vertices={curve} />
-      <meshLineMaterial attach="material" ref={material} transparent depthTest={false} lineWidth={width} color={color} dashArray={0.1} dashRatio={0.5} />
+      <meshLineMaterial attach="material" ref={material} transparent depthTest={false} lineWidth={width} color={color} dashArray={0.1} dashRatio={0.4} />
     </mesh>
   )
 }
