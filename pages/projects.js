@@ -28,7 +28,7 @@ export default function projects() {
                                 <NavLink href="/projects">Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://drive.google.com/file/d/1EXnTgOMuRYa5Xa8UpjPSSWmgXxhwjYzU/view?usp=sharing" target="_blank">Resume</NavLink>
+                                <NavLink href="/MaxMaio_Resume.pdf" target="_blank">Resume</NavLink>
                             </NavItem>
                         </Nav>
                     </div>
