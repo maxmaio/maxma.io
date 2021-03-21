@@ -9,7 +9,7 @@ export default function projects() {
             <div className={styles.center}>
                 <div className={styles.bio}>
                     <Image
-                        src="https://www.gravatar.com/avatar/4934318e81ec19904134280eb795b7ad?s=600"
+                        src="/gravatar.jpeg"
                         alt="avatar"
                         width={100}
                         height={100}
