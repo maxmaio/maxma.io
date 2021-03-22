@@ -20,18 +20,18 @@ export default function projects() {
 
                 </div>
                 <div >
-                        <Nav className={styles.nav}>
-                            <NavItem>
-                                <NavLink href="/">Home</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/projects">Projects</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/MaxMaio_Resume.pdf" target="_blank">Resume</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </div>
+                    <Nav className={styles.nav}>
+                        <NavItem>
+                            <NavLink href="/">Home</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/projects">Projects</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/MaxMaio_Resume.pdf" target="_blank">Resume</NavLink>
+                        </NavItem>
+                    </Nav>
+                </div>
 
             </div>
             <div className={styles.main}>

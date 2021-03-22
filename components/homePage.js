@@ -3,7 +3,7 @@ import React, { useState, useMemo, useRef } from 'react'
 import * as THREE from 'three'
 import * as meshline from 'threejs-meshline'
 import { extend, Canvas, useFrame, useThree } from 'react-three-fiber'
-import {Nav,  NavItem, NavLink} from 'reactstrap';
+import { Nav, NavItem, NavLink } from 'reactstrap';
 import Image from 'next/image'
 import styles from "../styles/homePage.module.css"
 
@@ -20,7 +20,7 @@ function Fatline({ curve, width, color, speed }) {
   )
 }
 
-function Lines({ count, colors, setLinesRendered}) {
+function Lines({ count, colors, setLinesRendered }) {
   const lines = useMemo(
     () =>
       new Array(count).fill().map(() => {
@@ -54,45 +54,50 @@ function App() {
   const mouse = useRef([0, 0])
   const [linesRendered, setLinesRendered] = useState(false);
   return (
-    <main className={styles.main}>     
-    <div className={styles.top}>
-    <Canvas 
-      gl={{ antialias: true }}
-      camera={{ position: [0, 0, 10], fov: 25 }}
-      onMouseMove={e => (mouse.current = [e.clientX - window.innerWidth / 2, e.clientY - window.innerHeight / 2])}>
-      <Lines count={20} colors={['#7a73ff', '#80e9ff', '#e0feff', '#fec959', '#9487ff']} setLinesRendered={setLinesRendered} />
-      <Rig mouse={mouse} />
-    </Canvas>
-    </div>
-   
-    {linesRendered && (
+    <main className={styles.main}>
+      {!linesRendered && (
+        <div className={styles.loading}>
+          <h4>Building...</h4>
+        </div>
+      )}
+      <div className={styles.top}>
+        <Canvas
+          gl={{ antialias: true }}
+          camera={{ position: [0, 0, 10], fov: 25 }}
+          onMouseMove={e => (mouse.current = [e.clientX - window.innerWidth / 2, e.clientY - window.innerHeight / 2])}>
+          <Lines count={20} colors={['#7a73ff', '#80e9ff', '#e0feff', '#fec959', '#9487ff']} setLinesRendered={setLinesRendered} />
+          <Rig mouse={mouse} />
+        </Canvas>
+      </div>
+
+      {linesRendered && (
         <div className={styles.center}>
-        <div className={styles.bio}>
-        <Image 
-            src="/gravatar.jpeg"
-            alt="avatar" 
-            width= {100}
-            height= {100}
+          <div className={styles.bio}>
+            <Image
+              src="/gravatar.jpeg"
+              alt="avatar"
+              width={100}
+              height={100}
             />
-        <h4>Max Maio</h4>
-        <p>Software Engineer in CA</p>
-        </div>
-        <div >
-        <Nav className={styles.nav}>
-            <NavItem>
-            <NavLink href="/" active= {true}>Home</NavLink>
-            </NavItem>
-            <NavItem>
-            <NavLink href="/projects">Projects</NavLink>
-            </NavItem>
-            <NavItem>
-            <NavLink href="/MaxMaio_Resume.pdf" target="_blank">Resume</NavLink>
-            </NavItem>
-        </Nav>
-        </div>
+            <h4>Max Maio</h4>
+            <p>Software Engineer in CA</p>
+          </div>
+          <div >
+            <Nav className={styles.nav}>
+              <NavItem>
+                <NavLink href="/" active={true}>Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/projects">Projects</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/MaxMaio_Resume.pdf" target="_blank">Resume</NavLink>
+              </NavItem>
+            </Nav>
+          </div>
 
         </div>
-    )}
+      )}
     </main>
   )
 }
