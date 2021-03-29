@@ -75,7 +75,7 @@ function App() {
           <div className={styles.bio}>
             <Image
               src="/gravatar.jpeg"
-              alt="avatar"
+              alt="San Francisco"
               width={100}
               height={100}
             />
