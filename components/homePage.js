@@ -80,7 +80,7 @@ function App() {
               height={100}
             />
             <h4>Max Maio</h4>
-            <p>Software Engineer in CA</p>
+            <p>Software Engineer in San Francisco</p>
           </div>
           <div >
             <Nav className={styles.nav}>
