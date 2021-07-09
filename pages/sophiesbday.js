@@ -12,7 +12,7 @@ const SVG = () => (
     Dear Sophie,
   </p>
   <p>
-    I can't believe we are celebrating a
+    I can&apos;t believe we are celebrating a
   </p>
   <p>
     second birthday together. Being with 
@@ -63,7 +63,7 @@ const SVG = () => (
     am with you. Thank you for putting
   </p>
   <p>
-    up with me and I can't wait to spend
+    up with me and I can&apos;t wait to spend
   </p>
   <p>
     more birthdays with you!
@@ -85,6 +85,7 @@ const SVG = () => (
     src="/000037810012.jpg"
     width= {150}
     height= {100}
+    alt="hi"
     /> 
 </Container>
 </div>

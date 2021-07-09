@@ -9,10 +9,10 @@ const SVG = () => {
 
         <Container className={styles.csstyping2}>
         <p>
-            <h1>you're invited </h1>
+            <h1>you&apos;re invited </h1>
         </p>
         <p>
-            <b>What:</b> Max's Birthday
+            <b>What:</b> Max&apos;s Birthday
         </p>
         <p>
             <b>When:</b> June 13th 2020 3pm-evening
@@ -21,7 +21,7 @@ const SVG = () => {
             <b>Where:</b> Meet at San Elijo State Beach
         </p>  
         <p style={{marginTop: 20}}>
-            After the beach we'll head up to
+            After the beach we&apos;ll head up to
         </p>
         <p>
             the new house where larry and chelle 
@@ -30,7 +30,7 @@ const SVG = () => {
             are gonna be grilling us cardiff crack!
         </p>
         <p>
-            Late night it's DK time
+            Late night it&apos;s DK time
         </p>
         <p>
             <Container className="dk">
