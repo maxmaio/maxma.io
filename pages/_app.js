@@ -11,8 +11,8 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
-        <meta name="description" content="Description" />
-        <meta name="keywords" content="Keywords" />
+        <meta name="description" content="Max Maio's Personal Website" />
+        <meta name="keywords" content="Max Maio, Software Engineer, Max, Maio" />
         <title>Max Maio</title>
 
         <link rel="manifest" href="/manifest.json" />
